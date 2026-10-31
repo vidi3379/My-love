@@ -1,0 +1,257 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Our Little Forever ❤️</title>
+<link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Quicksand:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{background:#fff3f7;color:#854c66;font-family:Quicksand,sans-serif;overflow-x:hidden}
+h1,h2,h3{font-family:'Great Vibes',cursive;font-weight:normal}
+h2{font-size:48px;color:#bd6288}
+p{line-height:1.9}
+section{padding:75px 20px;text-align:center}
+button{border:0;border-radius:30px;padding:14px 27px;background:#d66d98;color:white;font-weight:bold;cursor:pointer;margin:12px;transition:.3s}
+button:hover{transform:scale(1.06);background:#b94d7b}
+.hero{min-height:100vh;display:flex;flex-direction:column;align-items:center;justify-content:center;background:radial-gradient(circle,#fffafd,#ffdfeb,#f8bcd2);padding:25px}
+.hero h1{font-size:clamp(65px,12vw,105px);color:#b84e79}
+.hero p{margin:10px}
+.heart{font-size:85px;animation:beat 1.3s infinite}
+@keyframes beat{50%{transform:scale(1.2)}}
+.floating{position:fixed;bottom:-30px;animation:float 9s linear infinite;pointer-events:none;z-index:10}
+@keyframes float{to{transform:translateY(-110vh) rotate(360deg);opacity:0}}
+.container{max-width:780px;margin:auto}
+.envelope{font-size:100px;cursor:pointer;animation:beat 2s infinite}
+.letter{display:none;text-align:left;background:#fffafd;border:1px solid #f5d0df;border-radius:22px;padding:30px;margin:25px auto;box-shadow:0 8px 30px #bd62881b}
+.letter.show{display:block;animation:appear 1s}
+.letter p{margin:16px 0}
+@keyframes appear{from{opacity:0;transform:translateY(20px)}to{opacity:1;transform:translateY(0)}}
+.timeline{max-width:720px;margin:40px auto;text-align:left;border-left:3px solid #edacc4;padding-left:25px}
+.memory{background:white;border-radius:20px;padding:23px;margin-bottom:25px;position:relative;box-shadow:0 5px 20px #bd62881b}
+.memory:before{content:'♥';position:absolute;left:-39px;top:20px;color:#d76d98;font-size:23px}
+.memory h3{font-size:32px;color:#bd6288}
+.memory p{margin-top:10px}
+.special{background:linear-gradient(135deg,#f6b3cb,#d9769e);color:white}
+.special h2{color:white}
+.date{font-size:75px;font-family:'Great Vibes',cursive}
+.reasons{display:grid;grid-template-columns:repeat(auto-fit,minmax(145px,1fr));gap:15px;max-width:800px;margin:35px auto}
+.reason{background:white;border-radius:20px;padding:25px 12px;box-shadow:0 5px 15px #bd62881b;transition:.3s}
+.reason:hover{transform:translateY(-5px) rotate(-2deg)}
+.reason span{font-size:35px}
+.card{background:white;border-radius:25px;padding:30px;max-width:700px;margin:auto;box-shadow:0 8px 25px #bd62881b}
+.secret{display:none;background:#fff4f8;padding:25px;border-radius:20px;margin:20px auto;max-width:550px}
+.secret.show{display:block;animation:appear 1s}
+.final{min-height:85vh;background:linear-gradient(#fff0f5,#ffdce9);display:flex;flex-direction:column;align-items:center;justify-content:center}
+.final h1{font-size:clamp(65px,12vw,100px);color:#bd527e}
+footer{padding:25px;background:#e99bb8;color:white;text-align:center}
+@media(max-width:600px){h2{font-size:40px}.letter{padding:22px}.memory{padding:18px}}
+</style>
+</head>
+
+<body>
+
+<div id="hearts"></div>
+
+<!-- WELCOME -->
+<section class="hero">
+ <div class="heart">💗</div>
+ <p>A LITTLE WORLD MADE JUST FOR YOU</p>
+ <h1>Hey, My Love!</h1>
+ <p>Someone is very much in love with you... 🥹</p>
+ <p>And that someone is ME! 🎀</p>
+ <button onclick="go('letterSection')">Open Your Surprise 💌</button>
+ <p>Made with endless love, just for you.</p>
+</section>
+
+<!-- LOVE LETTER -->
+<section id="letterSection">
+ <h2>A Letter From My Heart</h2>
+ <p>Something I've always wanted to tell you...</p>
+ <div class="envelope" onclick="openLetter()">💌</div>
+ <p>Tap the letter, baby! 🎀</p>
+
+ <div class="letter" id="letter">
+ <h2>My Favourite Human ❤️</h2>
+ <p>My Love,</p>
+
+ <p>Kabhi-kabhi sochti hoon ki hamari story actually kab shuru hui thi... Shayad us din jab main pehli baar tumhare ghar aayi thi aur hum mile the. Tab mujhe bilkul idea nahi tha ki ek normal si meeting meri life ki itni beautiful memories ban jayegi.</p>
+
+ <p>Hum pehli baar mile, aur kuch hi din baad tumne mere liye woh trip plan ki. Aur phir aayi woh trip — hamari story ka sabse special chapter. ❤️</p>
+
+ <p>Raat ko coincidence se hamari seats same thi, aur pata nahi kab main tumhare shoulder par sir rakh kar so gayi. Itna simple moment tha, lekin aaj bhi mere dil ke bahut close hai.</p>
+
+ <p>Ek hi scooty par hum dono, tum ride kar rahe the aur main peeche baithi thi. Har beautiful place par rukna, saath enjoy karna aur meri endless bak-bak sunna. 😂</p>
+
+ <p>Woh side wali jagah jahan humne itni saari baatein ki, Dhari Devi Mandir ke paas tumhe cigarette ke liye tokna aur tumhara meri baat maan lena... sab yaad hai mujhe.</p>
+
+ <p>Us raat bike par tumhe tightly pakad kar sona, hotel mein paas-paas ek bed par sona, aur agle din tumhara mujhe jacket dena... these little moments became my favourite memories.</p>
+
+ <p>Phir saath mein trek karna aur trek ke beech mera tumse baar-baar relationship ko lekar questions poochna. 😂</p>
+
+ <p>And then came our special day...</p>
+ <h2>5 April 2026 ❤️</h2>
+
+ <p>The day we officially became US. Saath mein khana khana, wapas aana, raste mein enjoy karna... suddenly everything felt even more special.</p>
+
+ <p>Tumhara mujhe tease karna, jealous karna, meri care karna, meri pampering karna aur mere saare nakhre handle karna. 😂</p>
+
+ <p>Tumhara Delhi se Gurgaon aana, jab-jab maine bulaya tab-tab mere paas aana... I don't think you realise how much these little things mean to me.</p>
+
+ <p>Yes, we fought. We had misunderstandings. Kabhi maine breakup tak ki baat kar di. But our story isn't about being perfect. It's about learning, understanding and choosing each other even after difficult days.</p>
+
+ <p>I love your care, your smile, your teasing, your little efforts and even the way you irritate me. 😂❤️</p>
+
+ <p>Thank you for being my person. Thank you for listening to my endless talks. Thank you for making me feel special. Thank you for coming into my life.</p>
+
+ <p>I don't want a perfect love story. I just want OUR story, with all its silly moments, unexpected trips, hugs, fights, laughter and memories.</p>
+
+ <p>If I could go back and live those moments again, I would still want you beside me.</p>
+
+ <h2>I Love You, My Baby! 💗</h2>
+ <p>Today, tomorrow and in every little lifetime.</p>
+ <p>Forever yours,</p>
+ <h2>Your Girl 🎀</h2>
+ </div>
+</section>
+
+<!-- JOURNEY -->
+<section>
+ <h2>Our Little Love Story</h2>
+ <p>From strangers to my favourite person. 🥹</p>
+
+ <div class="timeline">
+  <div class="memory">
+   <h3>Our First Meeting 🌷</h3>
+   <p>The day I met you at your home. Little did I know you would become so important to me.</p>
+  </div>
+
+  <div class="memory">
+   <h3>Our First Trip 🚌</h3>
+   <p>Same seats, your shoulder, my sleepy eyes and the beginning of countless beautiful memories.</p>
+  </div>
+
+  <div class="memory">
+   <h3>One Scooty, Two Hearts 🛵</h3>
+   <p>You riding, me sitting behind you, endless conversations and beautiful places.</p>
+  </div>
+
+  <div class="memory">
+   <h3>Little Moments, Big Feelings 💞</h3>
+   <p>The bike rides, hotel memories, your jacket, the trek and all our silly conversations.</p>
+  </div>
+
+  <div class="memory">
+   <h3>Our Official Beginning 💍</h3>
+   <p>5 April 2026. The day we officially became each other's person.</p>
+  </div>
+
+  <div class="memory">
+   <h3>Distance Couldn't Stop Us 🌙</h3>
+   <p>Delhi to Gurgaon, your efforts, your visits and all the ways you showed your love.</p>
+  </div>
+
+  <div class="memory">
+   <h3>Still Writing Our Story ❤️</h3>
+   <p>Not perfect, not always easy, but a story I want to keep choosing.</p>
+  </div>
+ </div>
+</section>
+
+<!-- SPECIAL DATE -->
+<section class="special">
+ <p>THE DAY MY FAVOURITE CHAPTER BEGAN</p>
+ <h2>Our Special Date</h2>
+ <div class="date">05.04.2026</div>
+ <p>One date. Two hearts. One beautiful beginning. 💗</p>
+</section>
+
+<!-- REASONS -->
+<section>
+ <h2>Reasons Why I Love You</h2>
+ <p>And trust me, this list is never-ending! 🥹</p>
+
+ <div class="reasons">
+  <div class="reason"><span>🥰</span><p>Your smile</p></div>
+  <div class="reason"><span>🫶</span><p>Your care</p></div>
+  <div class="reason"><span>😂</span><p>Your teasing</p></div>
+  <div class="reason"><span>💗</span><p>Your efforts</p></div>
+  <div class="reason"><span>🧸</span><p>Your pampering</p></div>
+  <div class="reason"><span>🌙</span><p>Our late-night talks</p></div>
+  <div class="reason"><span>😘</span><p>Your hugs</p></div>
+  <div class="reason"><span>💍</span><p>Being MY person</p></div>
+  <div class="reason"><span>🎀</span><p>Simply YOU!</p></div>
+ </div>
+</section>
+
+<!-- SECRET SURPRISE -->
+<section>
+ <div class="card">
+  <h2>One Tiny Surprise 🎁</h2>
+  <p>Do you know how much I love you?</p>
+  <p>More than all the stars in the sky! ✨</p>
+  <button onclick="showSecret()">Click for a Secret 💌</button>
+
+  <div class="secret" id="secret">
+   <h2>Listen, Baby! 🥺</h2>
+   <p>If I had to choose again, I would still choose you. In every universe, every lifetime and every version of my life... I would find my way back to you. ❤️</p>
+   <p>You're my favourite notification, favourite person and favourite feeling. 💗</p>
+  </div>
+ </div>
+</section>
+
+<!-- FINAL -->
+<section class="final">
+ <div class="heart">❤️</div>
+ <h1>I Love You!</h1>
+ <p>In every possible way, in every possible lifetime.</p>
+ <h2 style="margin:20px">You + Me = Forever ♾️</h2>
+ <button onclick="forever()">One Last Thing... 💗</button>
+
+ <div class="secret" id="foreverMsg">
+  <h2>My Forever Person 🥹</h2>
+  <p>Thank you for being a part of my life. I hope we never stop making memories, laughing at silly things and falling in love with each other all over again.</p>
+  <h2>Forever & Always! 💋</h2>
+ </div>
+</section>
+
+<footer>
+ Made with ♡ by your girl, just for you 🎀
+ <p>Our story began before 5 April, but our forever starts every day. ❤️</p>
+</footer>
+
+<script>
+function go(id){
+ document.getElementById(id).scrollIntoView({behavior:'smooth'});
+}
+
+function openLetter(){
+ document.getElementById('letter').classList.toggle('show');
+}
+
+function showSecret(){
+ document.getElementById('secret').classList.toggle('show');
+}
+
+function forever(){
+ document.getElementById('foreverMsg').classList.toggle('show');
+}
+
+function createHeart(){
+ const h=document.createElement('div');
+ h.className='floating';
+ h.innerHTML=['💗','💕','❤️','🎀','💖','✨'][Math.floor(Math.random()*6)];
+ h.style.left=Math.random()*100+'vw';
+ h.style.fontSize=(15+Math.random()*22)+'px';
+ h.style.animationDuration=(6+Math.random()*6)+'s';
+ document.body.appendChild(h);
+ setTimeout(()=>h.remove(),12000);
+}
+setInterval(createHeart,600);
+</script>
+
+</body>
+</html>

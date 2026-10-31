@@ -1,324 +1,130 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>My Daddy | Our Little Forever 💗</title>
-<link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Baloo+2:wght@400;500;600;700;800&family=Quicksand:wght@400;500;600;700&display=swap" rel="stylesheet">
-
+<title>For My Daddy ♡ From Your Baby</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500;600;700&family=Quicksand:wght@400;500;600;700&display=swap" rel="stylesheet">
 <style>
-*{margin:0;padding:0;box-sizing:border-box}
-html{scroll-behavior:smooth}
-body{
- background:linear-gradient(135deg,#fff4f8,#ffe5ef,#fff8fb);
- color:#85445f;
- font-family:'Quicksand',sans-serif;
- overflow-x:hidden;
-}
-h1,h2,h3{font-family:'Pacifico',cursive;font-weight:normal}
-h2{font-size:clamp(32px,7vw,48px);color:#cf6694}
-p{line-height:1.85}
-section{padding:75px 20px;text-align:center}
-button{
- border:2px solid white;border-radius:50px;
- padding:14px 25px;
- background:linear-gradient(135deg,#ed9cbd,#c84f83);
- color:white;font-family:'Baloo 2',sans-serif;
- font-size:17px;cursor:pointer;
- box-shadow:0 6px 18px #d77b9e44;
- transition:.3s;margin:12px;
-}
-button:hover{transform:scale(1.07)}
-.hero{
- min-height:100vh;display:flex;flex-direction:column;
- align-items:center;justify-content:center;
- background:radial-gradient(circle at top,#fff,#ffe2ed,#f5bdd3);
- padding:25px;position:relative;overflow:hidden;
-}
-.hero h1{font-size:clamp(55px,12vw,100px);color:#c44e83}
-.hero p{margin:8px}
-.heart{font-size:75px;animation:beat 1.3s infinite}
-@keyframes beat{50%{transform:scale(1.2)}}
-.floating{
- position:fixed;bottom:-35px;
- animation:float 9s linear forwards;
- pointer-events:none;z-index:20;
-}
-@keyframes float{
- to{transform:translateY(-110vh) rotate(360deg);opacity:0}
-}
-.container{max-width:780px;margin:auto}
-.panel,.memory,.reason,.card{
- background:#fffafd;border:1px solid #f4c9da;
- border-radius:24px;padding:24px;
- box-shadow:0 8px 25px #bd62881b;
-}
-.envelope{font-size:95px;cursor:pointer;animation:beat 2s infinite;margin:15px}
-.letter{
- display:none;text-align:left;background:#fffafd;
- border:2px dashed #e9a3bf;border-radius:25px;
- padding:25px;margin:25px auto;line-height:1.9;
- box-shadow:0 10px 30px #d77b9e22;
-}
-.letter.show{display:block;animation:appear .8s}
-.letter p{margin:15px 0}
-@keyframes appear{
- from{opacity:0;transform:translateY(20px)}
- to{opacity:1;transform:translateY(0)}
-}
-.timeline{
- max-width:720px;margin:40px auto;text-align:left;
- border-left:3px solid #e9a3bf;padding-left:25px;
-}
-.memory{margin-bottom:24px;position:relative;padding:20px}
-.memory:before{
- content:'♥';position:absolute;left:-39px;
- top:20px;color:#d76d98;font-size:23px;
-}
-.memory h3{font-size:28px;color:#c75c8d}
-.memory p{margin-top:8px}
-.special{
- background:linear-gradient(135deg,#ed9cbd,#d45e91,#bd477e);
- color:white;
-}
-.special h2{color:white}
-.date{font-family:'Pacifico',cursive;font-size:clamp(45px,10vw,75px);margin:20px 0}
-.reasons{
- display:grid;grid-template-columns:repeat(auto-fit,minmax(140px,1fr));
- gap:15px;max-width:800px;margin:35px auto;
-}
-.reason{padding:20px 10px;transition:.3s}
-.reason:hover{transform:translateY(-7px) rotate(-2deg)}
-.reason span{font-size:35px}
-.secret{
- display:none;background:#fff0f6;padding:25px;
- border-radius:20px;margin:20px auto;max-width:550px;
-}
-.secret.show{display:block;animation:appear .8s}
-.final{
- min-height:90vh;background:radial-gradient(circle,#fff,#ffe5ef,#f7bfd5);
- display:flex;flex-direction:column;align-items:center;justify-content:center;
-}
-.final h1{font-size:clamp(55px,12vw,95px);color:#c44e83}
-footer{
- padding:35px 15px;background:linear-gradient(135deg,#e98db2,#c94f83);
- color:white;text-align:center;
-}
-footer h2{color:white;font-size:35px;margin-top:18px}
-.small{font-size:12px;letter-spacing:3px;color:#c16b91}
-@media(max-width:600px){
- section{padding:60px 16px}
- .letter{padding:19px}
- .memory{padding:17px}
-}
+:root{--pink:#ff8fb1;--rose:#ffcada;--lav:#d9c7ff;--cream:#fff8f4;--ink:#65475b}
+*{box-sizing:border-box}html{scroll-behavior:smooth}
+body{margin:0;font-family:Quicksand,sans-serif;color:var(--ink);background:linear-gradient(135deg,#fff0f5,#f4edff 48%,#eaf8ff);overflow-x:hidden}
+header{min-height:92vh;display:grid;place-items:center;text-align:center;padding:55px 20px;position:relative;overflow:hidden}
+header:before,header:after{content:"";position:absolute;border-radius:50%;filter:blur(2px);opacity:.55;z-index:0}
+header:before{width:330px;height:330px;background:#ffc5d8;top:-110px;left:-90px}
+header:after{width:300px;height:300px;background:#d5c4ff;bottom:-110px;right:-70px}
+.hero{position:relative;z-index:1;max-width:780px}
+.eyebrow{letter-spacing:3px;text-transform:uppercase;font-size:.75rem;color:#a8799b;font-weight:700}
+h1,h2,.script{font-family:"Dancing Script",cursive}
+h1{font-size:clamp(3.5rem,10vw,7rem);line-height:1;margin:18px 0;color:#e56e9a}
+.hero p{font-size:1.08rem;line-height:1.9;max-width:620px;margin:20px auto}
+.date-pill{display:inline-block;padding:11px 20px;border-radius:30px;background:#ffffffb8;border:1px solid #fff;box-shadow:0 8px 30px #d88eae22}
+.btn{display:inline-block;border:0;border-radius:30px;padding:13px 24px;background:linear-gradient(90deg,#ff8fb1,#c6a5ff);color:white;font-weight:700;text-decoration:none;cursor:pointer;box-shadow:0 8px 22px #d78db344;margin:8px}
+section{padding:65px 20px;max-width:1100px;margin:auto}
+.section-title{text-align:center;font-size:clamp(2.4rem,6vw,3.8rem);color:#d96f9c;margin:0 0 12px}
+.sub{text-align:center;line-height:1.8;margin:0 auto 34px;max-width:650px}
+.counter{background:#ffffffa8;border:1px solid white;border-radius:24px;padding:25px;text-align:center;max-width:650px;margin:30px auto;box-shadow:0 12px 35px #b78bb522}
+#days{font-size:2.7rem;color:#d96f9c;font-weight:700}
+.gallery{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:20px}
+.card{background:#ffffffb8;padding:12px;border-radius:22px;box-shadow:0 12px 30px #8c6a8820;transition:.25s}
+.card:hover{transform:translateY(-5px) rotate(-.4deg)}
+.card img{width:100%;height:360px;object-fit:cover;border-radius:15px;display:block}
+.caption{padding:13px 7px 5px;text-align:center;font-weight:700;color:#9b6487}
+.timeline{max-width:760px;margin:auto;display:grid;gap:15px}
+.moment{background:#ffffffb8;border:1px solid #fff;border-radius:18px;padding:18px 22px;line-height:1.8}
+.moment strong{color:#d96f9c}
+.letter-wrap{text-align:center}
+.envelope{font-size:5rem;cursor:pointer;display:inline-block;transition:.3s;filter:drop-shadow(0 8px 8px #d68aaa33)}
+.envelope:hover{transform:translateY(-8px) rotate(-5deg)}
+.letter{display:none;text-align:left;max-width:760px;margin:20px auto;background:#fffdfb;padding:30px;border-radius:20px;line-height:2;box-shadow:0 12px 35px #b78bb522;white-space:pre-line}
+.letter.show{display:block;animation:appear .5s ease}
+.surprise{display:none;background:#fff;border-radius:22px;padding:25px;text-align:center;max-width:650px;margin:20px auto;font-family:"Dancing Script",cursive;font-size:2rem;color:#d96f9c}
+footer{text-align:center;padding:45px 20px;background:#ffffff80;line-height:1.9}
+footer .script{font-size:2.7rem;color:#d96f9c}
+.heart{position:fixed;bottom:-30px;z-index:3;pointer-events:none;animation:float 7s linear forwards;opacity:.75}
+@keyframes float{to{transform:translateY(-110vh) rotate(30deg);opacity:0}}
+@keyframes appear{from{opacity:0;transform:translateY(12px)}to{opacity:1;transform:none}}
+@media(max-width:650px){.gallery{grid-template-columns:1fr}.card img{height:420px}section{padding:50px 16px}.letter{padding:22px}}
 </style>
 </head>
-
 <body>
+<header>
+  <div class="hero">
+    <div class="eyebrow">A little corner of the universe, just for us ♡</div>
+    <h1>Hiii Daddy!</h1>
+    <p>To my favourite person, my safe place, my forever adventure partner. This little website holds some of my favourite memories with you.</p>
+    <div class="date-pill">Our special date · 05 April 2026 💗</div><br>
+    <a class="btn" href="#memories">See our memories ↓</a>
+  </div>
+</header>
 
-<!-- WELCOME -->
-<section class="hero">
- <div class="heart">💗</div>
- <p class="small">A LITTLE WORLD MADE JUST FOR YOU</p>
- <h1>Hey, Daddy!</h1>
- <p>Someone is crazily, madly and endlessly in love with you...</p>
- <h3 style="font-size:30px;color:#c44e83">And that someone is ME! 🎀</h3>
- <button onclick="go('letterSection')">Open Your Surprise 💌</button>
- <p>Made with endless love, just for you.</p>
- <div style="font-size:28px;margin-top:20px">🌷 💕 🦋</div>
-</section>
-
-<!-- LETTER -->
-<section id="letterSection">
- <h2>A Letter From My Heart</h2>
- <p>Something I've always wanted to tell you...</p>
- <div class="envelope" onclick="openLetter()">💌</div>
- <p>Tap the letter, Daddy! 🎀</p>
-
- <div class="letter" id="letter">
- <h2>My Favourite Human ❤️</h2>
- <p>My Love,</p>
-
- <p>Kabhi-kabhi sochti hoon ki hamari story actually kab shuru hui thi... Shayad us din jab main pehli baar tumhare ghar aayi thi aur hum mile the. Tab mujhe bilkul idea nahi tha ki ek normal si meeting meri life ki itni beautiful memories ban jayegi.</p>
-
- <p>Hum pehli baar mile, aur kuch hi din baad tumne mere liye woh trip plan ki. Aur phir aayi woh trip — hamari story ka sabse special chapter. ❤️</p>
-
- <p>Raat ko coincidence se hamari seats same thi, aur pata nahi kab main tumhare shoulder par sir rakh kar so gayi. Itna simple moment tha, lekin aaj bhi mere dil ke bahut close hai.</p>
-
- <p>Ek hi scooty par hum dono, tum ride kar rahe the aur main peeche baithi thi. Har beautiful place par rukna, saath enjoy karna aur meri endless bak-bak sunna. 😂</p>
-
- <p>Woh side wali jagah jahan humne itni saari baatein ki, Dhari Devi Mandir ke paas tumhe cigarette ke liye tokna aur tumhara meri baat maan lena... sab yaad hai mujhe.</p>
-
- <p>Us raat bike par tumhe tightly pakad kar sona, hotel mein paas-paas ek bed par sona, aur agle din tumhara mujhe jacket dena... these little moments became my favourite memories.</p>
-
- <p>Phir saath mein trek karna aur trek ke beech mera tumse baar-baar relationship ko lekar questions poochna. 😂</p>
-
- <h2>5 April 2026 ❤️</h2>
- <p>The day we officially became US. Saath mein khana khana, wapas aana, raste mein enjoy karna... suddenly everything felt even more special.</p>
-
- <p>Tumhara mujhe tease karna, jealous karna, meri care karna, meri pampering karna aur mere saare nakhre handle karna. 😂</p>
-
- <p>Tumhara Delhi se Gurgaon aana, jab-jab maine bulaya tab-tab mere paas aana... I don't think you realise how much these little things mean to me.</p>
-
- <p>Yes, we fought. We had misunderstandings. Kabhi maine breakup tak ki baat kar di. But our story isn't about being perfect. It's about learning, understanding and choosing each other even after difficult days.</p>
-
- <p>I love your care, your smile, your teasing, your little efforts and even the way you irritate me. 😂❤️</p>
-
- <p>Kabhi-kabhi aap mujhe bahut pareshan karte ho. 😂 Kabhi lagta hai ki aap mujhse zyada important ho gaye ho, but kya karun, chhod bhi nahi sakti... pyaar jo itna hai aapse!</p>
-
- <p>And haan, mujhe pata hai aap bhi mujhse bahut pyaar karte ho. Aapki care aur efforts mujhe bahut special feel karwate hain. 🥹💗</p>
-
- <p>Thank you for being my person. Thank you for listening to my endless talks. Thank you for making me feel special.</p>
-
- <p>I don't want a perfect love story. I just want OUR story, with all its silly moments, unexpected trips, hugs, fights, laughter and memories.</p>
-
- <p>If I could go back and live those moments again, I would still want you beside me.</p>
-
- <h2>I LOVE YOU DADDY! 💗</h2>
- <p>Today, tomorrow and in every little lifetime.</p>
- <p>Forever yours,</p>
- <h2>Your Girl 🎀</h2>
- </div>
-</section>
-
-<!-- JOURNEY -->
 <section>
- <h2>Our Little Love Story</h2>
- <p>From strangers to my favourite person. 🥹</p>
- <div class="timeline">
-
-  <div class="memory">
-   <h3>Our First Meeting 🌷</h3>
-   <p>The day I met you at your home. Little did I know you would become so important to me.</p>
-  </div>
-
-  <div class="memory">
-   <h3>Our First Trip 🚌</h3>
-   <p>Same seats, your shoulder, my sleepy eyes and the beginning of countless beautiful memories.</p>
-  </div>
-
-  <div class="memory">
-   <h3>One Scooty, Two Hearts 🛵</h3>
-   <p>You riding, me sitting behind you, endless conversations and beautiful places.</p>
-  </div>
-
-  <div class="memory">
-   <h3>Dhari Devi Memories ❤️</h3>
-   <p>My little scolding, your cute reaction and memories I will always keep close.</p>
-  </div>
-
-  <div class="memory">
-   <h3>Tungnath & Your Jacket ❄️</h3>
-   <p>Cold weather, your jacket, our trek and questions that brought us closer.</p>
-  </div>
-
-  <div class="memory">
-   <h3>Our Official Beginning 💍</h3>
-   <p>5 April 2026. The day we officially became each other's person.</p>
-  </div>
-
-  <div class="memory">
-   <h3>Distance Couldn't Stop Us 🌙</h3>
-   <p>Delhi to Gurgaon, your efforts, your visits and all the ways you showed your love.</p>
-  </div>
-
-  <div class="memory">
-   <h3>Still Writing Our Story ❤️</h3>
-   <p>Not perfect, not always easy, but a story I want to keep choosing.</p>
-  </div>
-
- </div>
+  <h2 class="section-title">Our little forever</h2>
+  <p class="sub">Every moment with you becomes a memory I want to keep close. And this is only the beginning, Daddy.</p>
+  <div class="counter"><div>Since the day we became “us” 💞</div><div id="days">—</div><div>days of being your Baby</div></div>
 </section>
 
-<!-- SPECIAL DATE -->
-<section class="special">
- <p>THE DAY MY FAVOURITE CHAPTER BEGAN</p>
- <h2>Our Special Date</h2>
- <div class="date">05.04.2026</div>
- <p>One date. Two hearts. One beautiful beginning. 💗</p>
+<section id="memories">
+  <h2 class="section-title">Our Memories 📸</h2>
+  <p class="sub">A few little snapshots from our mountain adventures — misty views, silly poses, and my favourite person beside me.</p>
+  <div class="gallery">
+    <div class="card"><img src="images/memory-1.jpg" alt="Together looking at the river in the mountains"><div class="caption">Lost in the view, happy in your arms 🌧️</div></div>
+    <div class="card"><img src="images/memory-2.jpg" alt="Mountain trip playful moment"><div class="caption">Our silly little mountain moments 🤍</div></div>
+    <div class="card"><img src="images/memory-3.jpg" alt="Standing together in the mountains"><div class="caption">You, me, and a sky full of memories ☁️</div></div>
+    <div class="card"><img src="images/memory-4.jpg" alt="Our smiling mountain trip selfie"><div class="caption">My favourite smile is the one next to yours 🥹</div></div>
+  </div>
 </section>
 
-<!-- REASONS -->
 <section>
- <h2>Reasons Why I Love You</h2>
- <p>And trust me, this list is never-ending! 🥹</p>
- <div class="reasons">
-  <div class="reason"><span>🥰</span><p>Your Smile</p></div>
-  <div class="reason"><span>🫶</span><p>Your Care</p></div>
-  <div class="reason"><span>😂</span><p>Your Teasing</p></div>
-  <div class="reason"><span>💗</span><p>Your Efforts</p></div>
-  <div class="reason"><span>🧸</span><p>Your Pampering</p></div>
-  <div class="reason"><span>🌙</span><p>Our Talks</p></div>
-  <div class="reason"><span>😘</span><p>Your Hugs</p></div>
-  <div class="reason"><span>💍</span><p>Being MY Person</p></div>
-  <div class="reason"><span>🎀</span><p>Simply YOU!</p></div>
- </div>
-</section>
-
-<!-- SURPRISE -->
-<section>
- <div class="card">
-  <h2>One Tiny Surprise 🎁</h2>
-  <p>Do you know how much I love you?</p>
-  <p>More than all the stars in the sky! ✨</p>
-  <button onclick="showSecret()">Click for a Secret 💌</button>
-
-  <div class="secret" id="secret">
-   <h2>Listen, Baby! 🥺</h2>
-   <p>If I had to choose again, I would still choose you. In every universe, every lifetime and every version of my life... I would find my way back to you. ❤️</p>
-   <p>You're my favourite notification, favourite person and favourite feeling. 💗</p>
+  <h2 class="section-title">Our story, Daddy 💌</h2>
+  <div class="timeline">
+    <div class="moment"><strong>The first meeting</strong><br>Who knew one meeting would turn into so many memories and a story so close to my heart?</div>
+    <div class="moment"><strong>That first trip</strong><br>Sharing the same seat, talking, laughing, and me falling asleep on your shoulder. A little moment I still treasure.</div>
+    <div class="moment"><strong>Dhari Devi & the rides</strong><br>Remember when I told you not to smoke near the temple and you actually threw it away? And all those rides where I held you tight. 🥺</div>
+    <div class="moment"><strong>Tungnath memories</strong><br>The cold, the trek, your jacket, and us shivering together. The mountains were beautiful, but having you there made everything special.</div>
+    <div class="moment"><strong>05 April 2026</strong><br>The day our story officially became ours. My favourite “yes” — choosing you. ❤️</div>
+    <div class="moment"><strong>Every chapter after</strong><br>The care, the teasing, the silly fights, the making up, and all the times you showed up for me. I want many more chapters with you.</div>
   </div>
- </div>
 </section>
 
-<!-- FINAL -->
-<section class="final">
- <div class="heart">💗</div>
- <h1>I Love You Daddy!</h1>
- <p>My favourite headache, my favourite happiness!</p>
- <h2 style="margin:20px">You + Me = Forever ♾️</h2>
- <button onclick="forever()">One Last Thing... 💗</button>
+<section class="letter-wrap">
+  <h2 class="section-title">A letter for my Daddy 💗</h2>
+  <p class="sub">Tap the little envelope. I have something to tell you.</p>
+  <div class="envelope" role="button" tabindex="0" aria-label="Open love letter" onclick="openLetter()" onkeydown="if(event.key==='Enter'||event.key===' '){openLetter()}">💌</div>
+  <div class="letter" id="letter">My dearest Daddy,
 
- <div class="secret" id="foreverMsg">
-  <h2>My Forever Person 🥹</h2>
-  <p>Thank you for being a part of my life. I hope we never stop making memories, laughing at silly things and falling in love with each other all over again.</p>
-  <h2>Forever & Always! 💋</h2>
- </div>
+Sometimes I think about how beautifully life surprised me by bringing you into it. From our first meeting to our mountain adventures, every little memory has found a special place in my heart.
+
+I still remember sitting beside you on that first trip and falling asleep on your shoulder. I remember our rides, holding you tightly, the little talks, and the way you gave me your jacket when I was cold at Tungnath. Maybe they seemed like small things to you, but to me they mean so much.
+
+Thank you for caring for me, pampering me, handling my moods and nakhre, and coming to see me even when it meant travelling late. Thank you for making me feel loved in your own ways. We have had misunderstandings and silly fights too, but I never want us to stop choosing each other, listening to each other, and growing together.
+
+I don't need every day to be perfect. I just want us to keep making memories, laughing at our nonsense, holding hands through difficult days, and finding our way back to each other with love.
+
+You are my favourite adventure, my comfort, and my person.
+
+Baby loves you so much, Daddy, and is missing you too. ❤️
+
+Forever your Baby, your Nunu. 💋</div>
+  <button class="btn" onclick="showSurprise()">One more surprise 🎁</button>
+  <div class="surprise" id="surprise">Biggest hug for you, Daddy! 🤗<br>One million kisses from your Baby. Mwahhh! 💋💗</div>
 </section>
 
 <footer>
- <p>Made with ♡ by your girl, just for you 🎀</p>
- <p>Our story began before 5 April, but our forever starts every day. ❤️</p>
- <h2>Bby loves you dadda! 💋❤️</h2>
- <p style="margin-top:12px">ONE LOVE • TWO HEARTS • OUR STORY</p>
+  <div class="script">Baby loves you so much, Daddy! ♡</div>
+  Missing you too… today, tomorrow, and always.<br>
+  <strong>Forever your Baby · Your Nunu 💞</strong>
 </footer>
-
 <script>
-function go(id){
- document.getElementById(id).scrollIntoView({behavior:'smooth'});
-}
-function openLetter(){
- document.getElementById('letter').classList.toggle('show');
-}
-function showSecret(){
- document.getElementById('secret').classList.toggle('show');
-}
-function forever(){
- document.getElementById('foreverMsg').classList.toggle('show');
-}
-function createHeart(){
- const h=document.createElement('div');
- h.className='floating';
- h.innerHTML=['💗','💕','❤️','🎀','💖','✨','🌷'][Math.floor(Math.random()*7)];
- h.style.left=Math.random()*100+'vw';
- h.style.fontSize=(15+Math.random()*22)+'px';
- h.style.animationDuration=(6+Math.random()*6)+'s';
- document.body.appendChild(h);
- setTimeout(()=>h.remove(),12000);
-}
-setInterval(createHeart,700);
+const start = new Date(2026, 3, 5);
+function updateDays(){const now=new Date();const days=Math.max(0,Math.floor((new Date(now.getFullYear(),now.getMonth(),now.getDate())-start)/86400000));document.getElementById('days').textContent=days;}
+updateDays();
+function openLetter(){document.getElementById('letter').classList.toggle('show');}
+function showSurprise(){const s=document.getElementById('surprise');s.style.display='block';s.scrollIntoView({behavior:'smooth',block:'center'});}
+const symbols=['♡','💕','💗','✨','🦋'];
+setInterval(()=>{const el=document.createElement('span');el.className='heart';el.textContent=symbols[Math.floor(Math.random()*symbols.length)];el.style.left=Math.random()*100+'vw';el.style.fontSize=(16+Math.random()*20)+'px';document.body.appendChild(el);setTimeout(()=>el.remove(),7000);},850);
 </script>
-
 </body>
 </html>
